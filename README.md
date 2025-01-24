@@ -8,5 +8,11 @@ This repository contains the solution for the Cloud Resume Challenge using Azure
 - Serverless functions using Azure Functions
 - Custom domain with Azure DNS
 - Infrastructure as Code (IaC) with Terraform
-- CI/CD pipeline with Azure DevOps
+- CI/CD pipeline with Azure DevOps / Github Actions
 - Monitoring and logging with Azure Monitor
+
+## Resources
+- [Cloud Resume Challenge Website](https://cloudresumechallenge.dev/)
+
+## License
+This project is licensed under the MIT License.
