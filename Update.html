@@ -16,9 +16,9 @@
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f0f4] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111118]">
-            <div class="size-4">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f0f4] px-10 py-4 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
+          <div class="flex items-center gap-4 text-[#111118] hover:text-[#1919e6] transition-colors duration-300">
+            <div class="size-5">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6_319)">
                   <path
@@ -31,28 +31,16 @@
                 </defs>
               </svg>
             </div>
-            <h2 class="text-[#111118] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+            <h2 class="text-[#111118] text-lg font-bold leading-tight tracking-[-0.015em] hover:text-[#1919e6] transition-colors duration-300">Portfolio</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#111118] text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal" href="#">Work</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="nav-link text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#1919e6] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+              <a class="nav-link text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#1919e6] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full" href="#work">Work</a>
+              <a class="nav-link text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#1919e6] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full" href="#contact">Contact</a>
             </div>
             <div class="flex gap-2">
-              <!-- Commented out search button
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-[#111118]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-              -->
+              <!-- 
               <button
                 class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
               >
@@ -64,13 +52,8 @@
                   </svg>
                 </div>
               </button>
+              -->
             </div>
-            <!-- Commented out profile image
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://cdn.usegalileo.ai/stability/89314f40-8114-49da-a0c2-aaecda71f31f.png");'
-            ></div>
-            -->
           </div>
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
@@ -78,56 +61,56 @@
             <div class="@container">
               <div class="@[480px]:p-4">
                 <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2070&h=1200");'
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2070&h=1200");'
                 >
                   <h1
-                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center"
+                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center drop-shadow-lg"
                   >
                     Building better cloud experiences
                   </h1>
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#0000ff] transition-all duration-300 hover:scale-105 shadow-lg"
                   >
                     <span class="truncate">Get in touch</span>
                   </button>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
-            <p class="text-[#111118] text-base font-normal leading-normal pb-3 pt-1 px-4">
+            <h2 id="about" class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 hover:text-[#1919e6] transition-colors duration-300">About Me</h2>
+            <p class="text-[#111118] text-base font-normal leading-normal pb-3 pt-1 px-4 hover:bg-[#f8f8fc] rounded-xl transition-all duration-300 p-4 hover:shadow-lg">
               I'm a Cloud Engineer with a passion for automating and optimizing cloud infrastructure. I have experience working with various cloud platforms, including AWS, Azure, and Google Cloud. My goal is to help companies achieve scalable, reliable, and secure cloud environments that drive business success. As a Doctoral Researcher in Information Systems, my research interests focus on artificial intelligence and cybersecurity. When I'm not building cloud solutions, I'm deeply engaged in reviewing and analyzing research papers in these fields.
             </p>
-            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Work Experience</h2>
-            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+            <h2 id="work" class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 hover:text-[#1919e6] transition-colors duration-300">Work Experience</h2>
+            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4 hover:bg-[#f8f8fc] rounded-xl transition-all duration-300 hover:shadow-lg">
               <div class="flex flex-col items-center gap-1 pt-3">
                 <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/5c1881db-4f17-4ece-8d51-5d4fe31cefda.png");'
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6 ring-2 ring-[#1919e6] ring-offset-2 transition-transform duration-300 hover:scale-110"
+                  style='background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop");'
                 ></div>
-                <div class="w-[1.5px] bg-[#dcdce5] h-2 grow"></div>
+                <div class="w-[1.5px] bg-[#1919e6] h-2 grow transition-all duration-300"></div>
               </div>
               <div class="flex flex-1 flex-col py-3">
                 <p class="text-[#111118] text-base font-medium leading-normal">Team Lead at Technology Excellence Services</p>
                 <p class="text-[#636388] text-base font-normal leading-normal">2023-Present</p>
               </div>
               <div class="flex flex-col items-center gap-1">
-                <div class="w-[1.5px] bg-[#dcdce5] h-2"></div>
+                <div class="w-[1.5px] bg-[#1919e6] h-2"></div>
                 <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/4da5c09d-2f64-4fea-9567-80dc16f2d509.png");'
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6 ring-2 ring-[#1919e6] ring-offset-2 transition-transform duration-300 hover:scale-110"
+                  style='background-image: url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop");'
                 ></div>
-                <div class="w-[1.5px] bg-[#dcdce5] h-2 grow"></div>
+                <div class="w-[1.5px] bg-[#1919e6] h-2 grow transition-all duration-300"></div>
               </div>
               <div class="flex flex-1 flex-col py-3">
                 <p class="text-[#111118] text-base font-medium leading-normal">Cloud Engineer at Technology Excellence Services</p>
                 <p class="text-[#636388] text-base font-normal leading-normal">2020-2023</p>
               </div>
               <div class="flex flex-col items-center gap-1 pb-3">
-                <div class="w-[1.5px] bg-[#dcdce5] h-2"></div>
+                <div class="w-[1.5px] bg-[#1919e6] h-2"></div>
                 <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/af13daa5-c151-4d5a-a913-62ed9a66e41f.png");'
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6 ring-2 ring-[#1919e6] ring-offset-2 transition-transform duration-300 hover:scale-110"
+                  style='background-image: url("https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2128&auto=format&fit=crop");'
                 ></div>
               </div>
               <div class="flex flex-1 flex-col py-3">
@@ -137,37 +120,37 @@
             </div>
             <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 group hover:bg-[#f8f8fc] rounded-xl transition-all duration-300 p-4 hover:shadow-lg">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-md transition-transform duration-500 group-hover:scale-[1.02] overflow-hidden"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop");'
                 ></div>
                 <div>
-                  <p class="text-[#111118] text-base font-medium leading-normal">AWS Static Website CI/CD</p>
+                  <p class="text-[#111118] text-base font-medium leading-normal group-hover:text-[#1919e6] transition-colors duration-300">AWS Static Website CI/CD</p>
                   <p class="text-[#636388] text-sm font-normal leading-normal">Implementing automated deployment pipeline for static website hosting on AWS</p>
-                  <a href="https://cloudenoch.hashnode.dev/hosting-a-static-website-on-aws-and-automating-cicd-a-step-by-step-guide?source=more_articles_bottom_blogs" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline">View Project →</a>
+                  <a href="https://cloudenoch.hashnode.dev/hosting-a-static-website-on-aws-and-automating-cicd-a-step-by-step-guide?source=more_articles_bottom_blogs" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all duration-300">View Project <span>→</span></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 group hover:bg-[#f8f8fc] rounded-xl transition-all duration-300 p-4 hover:shadow-lg">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-md transition-transform duration-500 group-hover:scale-[1.02] overflow-hidden"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop");'
                 ></div>
                 <div>
-                  <p class="text-[#111118] text-base font-medium leading-normal">AWS 2-Tier Infrastructure</p>
+                  <p class="text-[#111118] text-base font-medium leading-normal group-hover:text-[#1919e6] transition-colors duration-300">AWS 2-Tier Infrastructure</p>
                   <p class="text-[#636388] text-sm font-normal leading-normal">Building scalable 2-tier architecture using Terraform and AWS services</p>
-                  <a href="#" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline">View Project →</a>
+                  <a href="#" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all duration-300">View Project <span>→</span></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 group hover:bg-[#f8f8fc] rounded-xl transition-all duration-300 p-4 hover:shadow-lg">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2128&auto=format&fit=crop");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-md transition-transform duration-500 group-hover:scale-[1.02] overflow-hidden"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2128&auto=format&fit=crop");'
                 ></div>
                 <div>
-                  <p class="text-[#111118] text-base font-medium leading-normal">Azure DevOps with Terraform</p>
+                  <p class="text-[#111118] text-base font-medium leading-normal group-hover:text-[#1919e6] transition-colors duration-300">Azure DevOps with Terraform</p>
                   <p class="text-[#636388] text-sm font-normal leading-normal">Infrastructure as Code implementation using Azure DevOps and Terraform</p>
-                  <a href="#" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline">View Project →</a>
+                  <a href="#" class="text-[#1919e6] text-sm font-normal leading-normal hover:underline inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all duration-300">View Project <span>→</span></a>
                 </div>
               </div>
             </div>
@@ -198,7 +181,7 @@
                 <p class="text-[#111118] text-sm font-medium leading-normal">Linux</p>
               </div>
             </div>
-            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
+            <h2 id="contact" class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
             <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
               <div class="text-[#111118] flex items-center justify-center rounded-lg bg-[#f0f0f4] shrink-0 size-12">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 24 24">
@@ -238,5 +221,33 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        
+        // Add click event listener to each link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            
+            // Get the target section id from href
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+              // Smooth scroll to target section
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+              
+              // Update URL without page jump
+              history.pushState(null, '', targetId);
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
